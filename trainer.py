@@ -76,7 +76,7 @@ class MNISTTrainer():
                 self.save_checkpoint(ckpt_name='model_latest.pt')
                 
                 # Update best checkpoint
-                if accuracy > self.best_accuracy:
+                if (accuracy > self.best_accuracy):
                     self.best_accuracy = accuracy
                     self.save_checkpoint(ckpt_name='model_best.pt')
                     print(f"[Best Accuracy: {self.best_accuracy:.2f}%]\n")
