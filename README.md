@@ -15,7 +15,7 @@
 <ol>
     <li>Make sure you have Python and the requirements installed.<br>
         To install all requirements, run <code>pip install -r requirements.txt</code></li>
-    <li>(Optional) Change configs and hyperparameters in <code>trainer.py</code> for optimal training.</li>
+    <li>(Optional) Change configs and hyperparameters in <code>trainer.py</code>.</li>
     <li>Run the trainer: <code>python trainer.py</code></li>
     <li>The trained module will be saved in <code>/Exps</code>.</li>
 </ol>
