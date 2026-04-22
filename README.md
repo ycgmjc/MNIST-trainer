@@ -1,0 +1,1 @@
+A simple NN trainer, compatible with the MNIST Dataset.
