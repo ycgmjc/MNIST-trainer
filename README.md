@@ -9,7 +9,7 @@ requirements.txt : The requirements for running the trainer.<br>
 /dataset : The directory where the MNIST dataset should be in.
 <h3>How to use</h3>
 <p>1. Make sure you have Python and the requirements installed.<br>
-To install all the requirements, run <code>pip install -r requirements.txt</code><br>
+    To install all the requirements, run <code>pip install -r requirements.txt</code><br>
 2. (optional) Change configs and hyperparameters in trainer.py for optimal training.<br>
 3. Run the trainer <code>python trainer.py</code><br>
 4. The trained module will be saved in /Exps.
