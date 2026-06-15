@@ -14,10 +14,9 @@ from Models import SimpleMNISTCNN
 
 app = FastAPI()
 
-# --- Mount Static Files ---
+# mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# --- Model Setup ---
 def load_model():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = SimpleMNISTCNN().to(device)
@@ -35,7 +34,6 @@ def load_model():
 
 model, device = load_model()
 
-# --- API Endpoint ---
 class ImageData(BaseModel):
     image: str
 
@@ -63,7 +61,6 @@ async def predict(data: ImageData):
     
     return {"predictions": results}
 
-# --- Serve the UI ---
 @app.get("/")
 async def get_ui():
     return FileResponse("static/index.html")
